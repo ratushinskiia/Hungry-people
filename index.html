@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry People</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://unpkg.com/imask"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="content header-content">
+                <div class="header-navigation-menu">
+                    <img src="./img/svg/menu.svg" alt="Menu">
+                </div>
+                <nav class="header-navigation">
+                    <div class="header-navigation-close">
+                        <img src="./img/svg/close.svg" alt="Close">
+                    </div>
+                    <div class="header-navigation-element">
+                        <a href="#" class="header-navigation__link">home</a>
+                        <a href="#about" class="header-navigation__link">about</a>
+                        <a href="#our-team" class="header-navigation__link">team</a>
+                        <a href="#book" class="header-navigation__link">booking</a>
+                    </div>
+                    <img src="./img/svg/helm.svg" alt="helm" class="header-navigation-helm">
+                    <div class="header-navigation-element">
+                        <a href="#menu" class="header-navigation__link">menu</a>
+                        <a href="#gallery" class="header-navigation__link">gallery</a>
+                        <a href="#events" class="header-navigation__link">events</a>
+                        <a href="#contact" class="header-navigation__link">contact</a>
+                    </div>
+                </nav>
+                <div class="header-middle">
+                    <div class="header-middle-time">
+                        Mon - Fri: 8PM - 10PM,<br> Sat - Sun: 8PM - 3AM
+                    </div>
+                    <div class="header-middle-content">
+                        <span class="header-middle__small-title">restaurant</span>
+                        <h1 class="header-middle__title">Hungry people</h1>
+                        <div class="header-middle-buttons">
+                            <a href="#book" class="button">Book Table</a>
+                            <a href="#about" class="button header-middle__explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="header-middle-socials">
+                        <a href="#" class="header-middle-social">
+                            <img src="./img/svg/facebook-icon.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="header-middle-social">
+                            <img src="./img/svg/twitter-icon.svg" alt="twitter">
+                        </a>
+                        <a href="#" class="header-middle-social">
+                            <img src="./img/svg/instagram-icon.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+        <div class="content section-content">
+            <div class="section-content-information">
+                <h2 class="section-title">About Us</h2>
+                <span class="section-text section-text_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                <span class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</span>
+            </div>
+            <div class="section-content-media">
+                <div class="section-content-media-image">
+                    <img src="./img/about-img.jpg" alt="about" class="section-content-media-image__img">
+                </div>
+            </div>
+        </div>
+        </section> 
+        <section class="our-team" id="our-team">
+        <div class="content section-content">
+            <div class="section-content-media section-content-media_align-left">
+                <div class="section-content-media-image section-content-media-image_align-left">
+                    <img src="./img/team-image.jpg" alt="Team image" class="section-content-media-image__img">
+                </div>
+            </div>
+            <div class="section-content-information">
+                <h2 class="section-title">Master Chef</h2>
+                <span class="section-text section-text_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                <span class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</span>
+            </div>
+        </div>
+        </section> 
+        <section class="book" id="book">
+        <div class="content section-content book-content">
+            <div class="section-content-information">
+                <h2 class="section-title">BOOK A TABLE</h2>
+                <form class="book-order">
+                    <input type="text" name="name" placeholder="Name" class="input-text">
+                    <input type="email" name="email" placeholder="Email" class="input-text">
+                    <input type="tel" name="phone" placeholder="Phone" class="input-text input-phone">
+                    <select name="people" class="select">
+                        <option value="">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input type="text" name="date" placeholder="Date (mm/dd)" id="date" class="input-text">
+                    <input type="text" name="time" placeholder="Time" id="time" class="input-text">
+                    <button class="button book-order__button">Book Now</button>
+                </form>
+            </div>
+            <div class="section-content-media book-media">
+                <div class="section-content-media-image">
+                    <img src="./img/book-img.jpg" alt="about" class="section-content-media-image__img">
+                </div>
+            </div>
+        </div>
+        </section> 
+        <section class="products">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content section-content">
+                        <div class="section-content-media section-content-media_align-left">
+                            <div class="section-content-media-image section-content-media-image_align-left">
+                                <img src="./img/product-img.jpg" alt="Product" class="section-content-media-image__img">
+                            </div>
+                        </div>
+                        <div class="section-content-information">
+                            <h2 class="section-title">chocolote pancakes</h2>
+                            <span class="section-text section-text_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                            <span class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content section-content">
+                        <div class="section-content-media section-content-media_align-left">
+                            <div class="section-content-media-image section-content-media-image_align-left">
+                                <img src="./img/product-img-2.jpg" alt="Product" class="section-content-media-image__img">
+                            </div>
+                        </div>
+                        <div class="section-content-information">
+                            <h2 class="section-title">BRUSCHETTA WITH CHERRY TOMATOES</h2>
+                            <span class="section-text section-text_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                            <span class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content section-content">
+                        <div class="section-content-media section-content-media_align-left">
+                            <div class="section-content-media-image section-content-media-image_align-left">
+                                <img src="./img/product-img-3.jpg" alt="Product" class="section-content-media-image__img">
+                            </div>
+                        </div>
+                        <div class="section-content-information">
+                            <h2 class="section-title">SPAGHETTI BOLOGNESE</h2>
+                            <span class="section-text section-text_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                            <span class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar">
+            </div>
+        </div>
+        </section> 
+        <section class="menu" id="menu">
+        <div class="content">
+            <h2 class="section-title"> Delicious menu</h2>
+            <span class="menu-description">Lorem ipsum dolor sit amet, consectetur adipiscing eli t. Duis at velit maximus, molestie est a, tempor magna.</span>
+            <div>
+                <ul id="menu-tabs" class="menu-tabs">
+                    <li class="tab-name menu-tabs-name active" data-menu-tabs-name="pasta">Pasta</li>
+                    <li class="tab-name menu-tabs-name" data-menu-tabs-name="desert">Desert</li>
+                    <li class="tab-name menu-tabs-name" data-menu-tabs-name="wine">Wine</li>
+                </ul>
+                <div class="menu-content">
+                    <div class="tab-content menu-content-tab active" data-menu-tabs-tab="pasta">
+                        <div class="menu-list">
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Lobster Ravioli</span>
+                                        <span class="menu-list-element-description">pasta ravioli filled with lobster, served with baby prawns, cream or tomato sauce and basil
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">110 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Ravioli (V)</span>
+                                        <span class="menu-list-element-description">ricotta and spinach with fresh tomato and basil
+
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">55,68 USD</div>
+                                </div>
+                            </div>
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Farfallee Con Pollo</span>
+                                        <span class="menu-list-element-description">farfalle pasta with strips of chicken breast, pine nuts and onions in a tomato and cream sauce
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">150 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Linguinie Gamberoni</span>
+                                        <span class="menu-list-element-description">king prawns with garlic, white wine, cherry tomatoes and chilli butter
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">43 USD</div>
+                                </div>
+                            </div>
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Spaghetti Carbonara</span>
+                                        <span class="menu-list-element-description">crispy smoked pancetta in a cream sauced finished with parmesan and egg yolk
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">75 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Spaghetti Bolognese</span>
+                                        <span class="menu-list-element-description">traditional beef ragu sauce
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">60,5 USD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content menu-content-tab" data-menu-tabs-tab="desert">
+                        <div class="menu-list">
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">PROSCIUTTO E MELONE</span>
+                                        <span class="menu-list-element-description">Italian 18-Month Parma ham Riserva and fresh cantaloupe melon drizzled with Balsamic vinegar reduction
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">31 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">BRUSCHETTA WITH CHERRY TOMATOES</span>
+                                        <span class="menu-list-element-description">Toasted Tuscan bread topped with cherry tomatoes, garlic, basil and extra virgin olive oil
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">22 USD</div>
+                                </div>
+                            </div>
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">BRUSCHETTA WITH AVOCADO</span>
+                                        <span class="menu-list-element-description">Toasted home baked bread topped with cucumber, black olives, fresh dill and feta cheese
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">40 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">CARPACCIO DI MANZO</span>
+                                        <span class="menu-list-element-description">Carpaccio of beef tenderloin garnished with parmigiano reggiano cheese,wild rocket, champignon mushrooms and extra virgin olive oil
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">49 USD</div>
+                                </div>
+                            </div>
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">TARTARE DI SALMONE</span>
+                                        <span class="menu-list-element-description">Fresh salmon tartar, marinated with lemon zest, olive oil and pink peppercorns. Served with mixed salad
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">39,99 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">COCKTAIL DI GAMBERI</span>
+                                        <span class="menu-list-element-description">Grilled shrimp marinated in coriander and lemon. Served with green asparagus, truffle-cocktail sauce and a drizzle of sesame oil
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">25,68 USD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content menu-content-tab" data-menu-tabs-tab="wine">
+                        <div class="menu-list">
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Merlot, Italy Trentino
+                                        </span>
+                                        <span class="menu-list-element-description">175ml red wine
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">15 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Cabernet Sauvignon, Italy
+                                        </span>
+                                        <span class="menu-list-element-description">bottle red wine
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">40 USD</div>
+                                </div>
+                            </div>
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Valpolicella, Italy Veneto</span>
+                                        <span class="menu-list-element-description">bottle red wine
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">33 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Pinot Grigio, Italy Veneto</span>
+                                        <span class="menu-list-element-description">175ml white wine
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">12,5 USD</div>
+                                </div>
+                            </div>
+                            <div class="menu-list-column">
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Grillo, Italy</span>
+                                        <span class="menu-list-element-description">bootle white wine
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">29 USD</div>
+                                </div>
+                                <div class="menu-list-element">
+                                    <div class="menu-list-element-text">
+                                        <span class="menu-list-element__name">Verdichio Classico, Italy Veneto</span>
+                                        <span class="menu-list-element-description">bootle white wine
+                                        </span>
+                                    </div>
+                                    <div class="menu-list-element-price">69 USD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section> 
+        <section class="events" id="events">
+        <div class="content section-content">
+            <div class="section-content-media section-content-media_align-left">
+                <div class="section-content-media-image section-content-media-image_align-left">
+                    <img src="./img/event-weddings.jpeg" alt="Event Weddings" class="section-content-media-image__img">
+                    <span class="event-element__name top">Weddings</span>
+                </div>
+            </div>
+            <div class="section-content-media">
+                <div class="section-content-media-image">
+                    <img src="./img/event-corporate.jpeg" alt="Event Corporate" class="section-content-media-image__img">
+                    <span class="event-element__name bottom">Corporates</span>
+                </div>
+            </div>
+        </div>
+        </section> 
+        <section class="gallery" id="gallery">
+        <a href="./img/gallery-photo-1-large.jpg" class="gallery-image" style="background-image: url(./img/gallery-photo-1.jpg)"></a>
+        <a href="./img/gallery-photo-2-large.jpg" class="gallery-image" style="background-image: url(./img/gallery-photo-2.jpg)"></a>
+        <a href="./img/gallery-photo-3-large.jpg" class="gallery-image" style="background-image: url(./img/gallery-photo-3.jpg)"></a>
+        <a href="./img/gallery-photo-4-large.jpg" class="gallery-image" style="background-image: url(./img/gallery-photo-4.jpg)"></a>
+        </section> 
+        <section class="contact" id="contact">
+        <div class="content">
+            <h2 class="section-title">Contact</h2>
+            <span class="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+            <form action="POST" class="contact-form">
+            <div class="contact-form-contacts">
+                <input type="text" name="name" placeholder="Name" class="input-text contact-form-contacts__input">
+                <input type="email" name="email" placeholder="Email" class="input-text contact-form-contacts__input">
+                <input type="tel" name="phone" placeholder="Phone" class="input-text contact-form-contacts__input input-phone">
+            </div>
+            <textarea class="input-textarea contact-form__message" name="message" placeholder="message"></textarea>
+            <button class="button contact-form-button">Send Message</button>
+            </form>
+        </div>
+        </section> 
+        <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73463.13950766965!2d-122.48463530813292!3d37.761508997065214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a524767fb9%3A0x8421d0c06f9e59c5!2z0JLQuNC60YLQvtGA0LjQsNC90YHQutC40LUg0LTQvtC80LA!5e0!3m2!1sru!2sru!4v1658128446323!5m2!1sru!2sru" width="100%" height="475" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section> 
+        <section class="footer">© Copyright <b>Mindblister</b> 2019</section>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
