@@ -12,18 +12,21 @@ const choices = new Choices('.select', {
     searchEnabled: false
 });
 flatpickr("#date", {
-    dateFormat: 'm/d'
+    dateFormat: 'm/d',
+    disableMobile: "true"
 });
 flatpickr("#time", {
     enableTime: true,
     noCalendar: true,
     dateFormat: 'H:i',
-    time_24hr: true
+    time_24hr: true,
+    disableMobile: "true"
 });
+
 
 // Slider
 const swiper = new Swiper('.swiper', {
-    sliderPerView : 2,
+    sliderPerView : 1,
     autoHeight: true,
     scrollbar: {
         el: '.swiper-scrollbar',

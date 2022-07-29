@@ -469,6 +469,7 @@ img {
     padding-bottom: 100%;
 }
 
+
 /*********************** Contact ********************/
 .contact{
     padding: 100px 0;
@@ -544,7 +545,6 @@ img {
     }
     .header-middle {
         height: calc(100% - 100px);
-        height: 100%;
     }
     .header-middle__explore {
         margin-top: 20px;
